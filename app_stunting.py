@@ -99,21 +99,6 @@ cara_pengukuran = st.selectbox(
 # STATUS GIZI Section
 st.markdown("<div class='section-header'>STATUS GIZI</div>", unsafe_allow_html=True)
 
-# Row 3: Status BB/U dan Status BB/TB
-col1, col2 = st.columns(2)
-
-with col1:
-    status_bbu = st.selectbox(
-        "Status BB/U",
-        ["Normal", "Kurang", "Buruk", "Kurang Baik"]
-    )
-
-with col2:
-    status_bbtb = st.selectbox(
-        "Status BB/TB",
-        ["Gizi Baik", "Gizi Kurang", "Gizi Buruk", "Gizi Baik Gemuk"]
-    )
-
 # Kenaikan Berat Badan
 kenaikan_berat = st.selectbox(
     "Kenaikan Berat Badan dari Pengukuran Sebelumnya",
