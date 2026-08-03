@@ -155,9 +155,6 @@ if classify_button:
     with col3:
         st.metric(label="Confidence", value=f"{confidence:.1f}%")
     
-    with col4:
-        st.metric(label="Status Gizi", value=status_bbtb)
-    
     st.markdown("---")
     
     # Interpretasi
@@ -258,7 +255,7 @@ if classify_button:
         'Nilai': [
             nama_balita if nama_balita else '-',
             jenis_kelamin, f'{usia_bulan} bulan', f'{berat_badan} kg', f'{tinggi_badan} cm',
-            cara_pengukuran, status_bbu, status_bbtb, kenaikan_berat
+            cara_pengukuran, kenaikan_berat
         ]
     }
     df_summary = pd.DataFrame(summary_data)
