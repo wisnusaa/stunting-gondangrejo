@@ -250,7 +250,7 @@ if classify_button:
     summary_data = {
         'Parameter': [
             'Nama Balita', 'Jenis Kelamin', 'Usia', 'Berat Badan', 'Tinggi Badan',
-            'Cara Pengukuran', 'Status BB/U', 'Status BB/TB', 'Kenaikan Berat'
+            'Cara Pengukuran', 'Kenaikan Berat'
         ],
         'Nilai': [
             nama_balita if nama_balita else '-',
